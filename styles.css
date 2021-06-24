@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-link{
+    margin: 0 25px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 1.5em;
+}
+.nav-link:hover{
+    color:hsl(205, 78%, 60%);
+}
+
+.header{
+   font-size: 1.5em;
+   color:hsl(205, 78%, 60%);
+}
+
+.container{
+    height: 100%;
+    background-color: #F1f5f8;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    height: 150px;
+}
+.titles{
+    display: flex;
+    flex-direction: row;
+}
+.color{
+    margin-left: 15px;
+}
+.titles h1, .titles span{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.titles span{
+    color: cornflowerblue;
+}
+.btn{
+    padding-top: 20px;
+}
+.main-btn{
+    padding: 15px;
+    display: inline-block;
+    border: 0.15em solid #282828;
+    color: #282828;
+    box-sizing: border-box;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+}
+.main-btn:hover{
+    color: #FFFFFF;
+    background-color:#282828;
+    cursor: pointer;
+}
+
+@media all and (max-width: 690px){
+    .titles h1, .titles span{
+        font-size: 2.5rem;
+    }
+}
+@media all and (max-width: 590px){
+    .titles h1, .titles span{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 500px){
+    .titles h1, .titles span{
+        font-size: 1.5rem;
+    }
+    .header{
+        font-size: 1em;
+     }
+     .nav-link{
+        margin: 0 15px;
+        font-size: 1em;
+    }
+    .main-box{
+        height: 100px;
+    }
+}
+@media all and (max-width: 380px){
+    .titles h1, .titles span{
+        font-size: 1rem;
+    }
+    .header{
+        font-size: 0.75em;
+     }
+     .nav-link{
+        margin: 0 15px;
+        font-size: 0.75em;
+    }
+    .main-btn{
+        padding: 10px;
+        font-size: 0.75em;
+    }
+    .main-box{
+        height: 80px;
+    }
+}
+@media all and (max-width: 270px){
+    .titles h1, .titles span{
+        font-size: 0.7rem;
+    }
+    .header{
+        font-size: 0.6em;
+     }
+     .nav-link{
+        margin: 0 15px;
+        font-size: 0.6em;
+    }
+    .main-btn{
+        padding: 7px;
+        font-size: 0.75em;
+    }
+    .main-box{
+        height: 50px;
+    }
+}
